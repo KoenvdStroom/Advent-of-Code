@@ -1,10 +1,10 @@
 def main():
   with open("input.txt", "r") as f:
     data = f.read()
-    for i in range(3, len(data)):
+    for i in range(13, len(data)):
     
-      prev_three = [*data[i-3:i]]
-      if data[i] in prev_three or len(prev_three) != len(set(prev_three)):
+      prev_thirteen = [*data[i-13:i]]
+      if data[i] in prev_thirteen or len(prev_thirteen) != len(set(prev_thirteen)):
         continue
       else:
         print(i+1)
