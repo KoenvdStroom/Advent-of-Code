@@ -28,10 +28,6 @@ def calc_scenic(row, col, index_row, index_col):
   check_after_row = row[index_row+1:]
   check_before_col = col[:index_col][::-1]
   check_after_col = col[index_col+1:]
-  before_row = all(int(item) > int(x) for x in check_before_row)
-  after_row = all(int(item) > int(x) for x in check_after_row)
-  before_col = all(int(item) > int(x) for x in check_before_col)
-  after_col = all(int(item) > int(x) for x in check_after_col)
   scenic_left = 0
   for i in range(len(check_before_row)):
 
