@@ -38,7 +38,7 @@ def main():
     items_handled[i] = 0
   all_dividers = [v["test"]["divider"] for (k,v) in monkeys.items()]
   d = math.lcm(*all_dividers)
-  print(all_dividers)
+  print(d)
   for i in range(10000):
 
     for (monkey, values) in monkeys.items():
